@@ -1,0 +1,1 @@
+if you want to separate admin and public files. Just an example
