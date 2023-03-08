@@ -1,5 +1,6 @@
 <?php
-define('ROOT',  'http://localhost/custom_mvc_model/');
+
+define('ROOT',  'http://localhost/project_manager/');
 define('BASE',  __DIR__);
 
 require_once __DIR__.'/base/configurations.php';
@@ -21,7 +22,7 @@ if ($url == '/')
     // require_once __DIR__.'/Views/index_view.php';
 
     // $mainModel = New MainModel();
-    $mainController = New MainController();$mainController->welcome();
+    $mainController = New MainController();$mainController->index();
 
 
 }else{
@@ -79,5 +80,11 @@ if ($url == '/')
         //require the 404 controller and initiate it
         //Display its view
     }
+    function autoloader($class) {
+
+        require_once __DIR__.'/Classes/'.$class . '.php';
+    
+    }
+    spl_autoload_register('autoloader');
 }
 ?>

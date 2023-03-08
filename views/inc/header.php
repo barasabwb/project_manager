@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,12 +10,10 @@
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
         rel="stylesheet" />
         
-        <script src="<?= ROOT?>resources/external/libraries/tailwind/tailwind.js"></script>
-        <link
-        rel="stylesheet"
-        href="<?= ROOT?>resources/external/libraries/tailwind/tailwind-elements.min.css" />
-        <script src="<?= ROOT?>resources/external/libraries/tailwind/tailwind-elements-index.min.js
-        "></script>
+        <!-- <link href="<?= ROOT?>resources/external/libraries/tailwind/daisyui/daisyui.css" rel="stylesheet" type="text/css" /> -->
+        <!-- <script src="<?= ROOT?>resources/external/libraries/tailwind/tailwind.js"></script> -->
+              <link href="<?= ROOT?>resources/dist/output.css" rel="stylesheet" type="text/css" />
+
         <script>
         tailwind.config = {
             darkMode: "class",
@@ -34,8 +32,9 @@
 
         <script src="<?= ROOT?>resources/external/jquery.js"></script>
         <script src="<?= ROOT?>resources/external/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+
    
         <!-- CUSTOM CSS  -->
         <link rel="stylesheet" href="<?= ROOT?>resources/custom/css/main.css" />
     </head>
-    <body class="font-mono">
+    <body class="font-sans hidden">
