@@ -1,6 +1,46 @@
+<style>
+    .modal {
+  z-index: 1072;
+  @apply hidden fixed top-0 left-0 w-full h-full outline-none
+}
+
+.modal.show {
+  @apply block
+}
+
+.modal-backdrop {
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  @apply fixed bg-black top-0 left-0
+}
+
+.modal-backdrop.fade {
+  @apply opacity-0
+}
+
+.modal-backdrop.show {
+  @apply opacity-50
+}
+
+.modal.fade .modal-dialog {
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+  -webkit-transform: translate(0,-50px);
+  transform: translate(0,-50px);
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+</style>
+
 <section class="navigation_bar_section sticky top-0 z-50">
 <div class="navbar bg-base-100">
   <div class="navbar-start">
+
     <a class="block md:hidden hover:scale-105 transition duration-100 ease-in-out cursor-pointer text-xl">Manager</a>
 
     <!-- <div class="dropdown">
@@ -18,7 +58,9 @@
     <a class="hidden md:block  hover:scale-105 transition duration-100 ease-in-out cursor-pointer text-xl">Manager</a>
   </div>
   <div class="navbar-end space-x-4">
-    <button class="btn btn-ghost btn-sm text-xs">Sign In</button>
+
+
+    <label for="my-modal-5"  class="btn btn-ghost btn-sm text-xs">Sign In</label>
     <button class="btn btn-success btn-sm text-xs text-white">Sign Up</button>
 
     <!-- <button class="btn btn-ghost btn-circle">

@@ -12,24 +12,7 @@
         
         <!-- <link href="<?= ROOT?>resources/external/libraries/tailwind/daisyui/daisyui.css" rel="stylesheet" type="text/css" /> -->
         <!-- <script src="<?= ROOT?>resources/external/libraries/tailwind/tailwind.js"></script> -->
-              <link href="<?= ROOT?>resources/dist/output.css" rel="stylesheet" type="text/css" />
-
-        <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-            fontFamily: {
-                sans: ["Roboto", "sans-serif"],
-                body: ["Roboto", "sans-serif"],
-                mono: ["ui-monospace", "monospace"],
-            },
-            },
-            corePlugins: {
-            preflight: false,
-            },
-        };
-        </script>
-
+        <link href="<?= ROOT?>resources/dist/output.css" rel="stylesheet" type="text/css" />
         <script src="<?= ROOT?>resources/external/jquery.js"></script>
         <script src="<?= ROOT?>resources/external/libraries/bootstrap/bootstrap.bundle.min.js"></script>
 
